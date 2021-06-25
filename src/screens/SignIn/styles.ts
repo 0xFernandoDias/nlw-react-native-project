@@ -7,12 +7,8 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    image: {
-        width: '100%',
-        height: 360
-    },
     content: {
-        marginTop: -40,
+        marginTop: -90,
         paddingHorizontal: 50
     },
     title: {
@@ -26,7 +22,7 @@ export const styles = StyleSheet.create({
     subtitle: {
         color: theme.colors.heading,
         textAlign: 'center',
-        fontSize: 15,
+        fontSize: 14,
         marginBottom: 64,
         fontFamily: theme.fonts.title500,
         lineHeight: 25
