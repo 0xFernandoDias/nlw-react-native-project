@@ -25,6 +25,11 @@ export function AppointmentCreate() {
         setOpenGuildsModal(true)
     }
 
+    const handleCloseGuilds = () => {
+        setOpenGuildsModal(false)
+    }
+
+
     const handleGuildSelect = (guildSelect: GuildProps) => {
         setGuild(guildSelect)
         setOpenGuildsModal(false)
@@ -32,6 +37,7 @@ export function AppointmentCreate() {
 
     return (
         <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'} >
+            <Background>
             <ScrollView>
                 <Background>
                     <Header
@@ -68,8 +74,8 @@ export function AppointmentCreate() {
 
                         <View style={styles.field}>
                             <View>
-                                <Text style={styles.label}>
-                                    Month and day
+                                <Text style={[styles.label, { marginBottom: 12 }]}>
+                                    {'Month & day'}
                                 </Text>
 
                                 <View style={styles.column}>
@@ -82,8 +88,8 @@ export function AppointmentCreate() {
                             </View>
 
                             <View>
-                                <Text style={styles.label}>
-                                    Hour and minute
+                                <Text style={[styles.label, { marginBottom: 12 }]}>
+                                    {'Hour & minute'}
                                 </Text>
 
                                 <View style={styles.column}>
@@ -120,7 +126,9 @@ export function AppointmentCreate() {
                     </View>
                 </Background>
             </ScrollView>
-            <ModalView visible={openGuildsModal}>
+            </Background>
+
+            <ModalView visible={openGuildsModal} closeModal={handleCloseGuilds}>
                 <Guilds handleGuildSelect={handleGuildSelect} />
             </ModalView>
         </KeyboardAvoidingView>

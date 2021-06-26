@@ -17,7 +17,7 @@ export function Header({ title, action }: Props) {
 
     const navigation = useNavigation()
 
-    const hangleGoBack = () => {
+    const handleGoBack = () => {
         navigation.goBack()
     }
 
@@ -26,7 +26,7 @@ export function Header({ title, action }: Props) {
             style={styles.container}
             colors={[secondary100, secondary40]}
         >
-            <BorderlessButton onPress={hangleGoBack}>
+            <BorderlessButton onPress={handleGoBack}>
                 <Feather
                     name="arrow-left"
                     size={24}

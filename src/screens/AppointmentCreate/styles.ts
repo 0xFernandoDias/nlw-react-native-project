@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     label: {
         fontSize: 18,
         fontFamily: theme.fonts.title700,
-        color: theme.colors.heading
+        color: theme.colors.heading,
     },
     form: {
         paddingHorizontal: 24,
@@ -28,9 +28,10 @@ export const styles = StyleSheet.create({
     image: {
         width: 64,
         height: 68,
-        backgroundColor: theme.colors.secondary50,
+        backgroundColor: theme.colors.secondary40,
         borderWidth: 1,
-        borderRadius: 8
+        borderRadius: 8,
+        borderBottomColor: theme.colors.secondary50
     },
     selectBody: {
         flex: 1,
@@ -59,7 +60,7 @@ export const styles = StyleSheet.create({
     },
     footer: {
         marginVertical: 20,
-        marginBottom: 115,
+        marginBottom: 70,
         alignItems: 'center'
     }
 })

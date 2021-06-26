@@ -21,6 +21,30 @@ export function Guilds({ handleGuildSelect }: Props) {
             name: 'Legendary',
             icon: 'image.png',
             owner: true
+        },
+        {
+            id: '3',
+            name: 'Legendary',
+            icon: 'image.png',
+            owner: true
+        },
+        {
+            id: '4',
+            name: 'Legendary',
+            icon: 'image.png',
+            owner: true
+        },
+        {
+            id: '5',
+            name: 'Legendary',
+            icon: 'image.png',
+            owner: true
+        },
+        {
+            id: '6',
+            name: 'Legendary',
+            icon: 'image.png',
+            owner: true
         }
     ]
     return (
@@ -29,8 +53,11 @@ export function Guilds({ handleGuildSelect }: Props) {
                 data={guilds}
                 keyExtractor={item => item.id}
                 renderItem={({ item }) => (<Guild data={item} onPress={() => handleGuildSelect(item)} />)}
-                ItemSeparatorComponent={() => <ListDivider />}
+                ItemSeparatorComponent={() => <ListDivider isCentered />}
                 showsVerticalScrollIndicator={false}
+                contentContainerStyle={{paddingBottom: 69, paddingTop: 104}}
+                ListHeaderComponent={() => <ListDivider isCentered/>}
+
                 style={styles.guilds}
             />
         </View>

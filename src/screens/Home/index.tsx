@@ -52,6 +52,66 @@ export function Home() {
             category: '1',
             date: '06/22 at 08:40PM',
             description: "It's today that we will reach the challenger without losing a md10 match"
+        },
+        {
+            id: '3',
+            guild: {
+                id: '1',
+                name: 'Legendary',
+                icon: null,
+                owner: true
+            },
+            category: '1',
+            date: '06/22 at 08:40PM',
+            description: "It's today that we will reach the challenger without losing a md10 match"
+        },
+        {
+            id: '4',
+            guild: {
+                id: '1',
+                name: 'Legendary',
+                icon: null,
+                owner: true
+            },
+            category: '1',
+            date: '06/22 at 08:40PM',
+            description: "It's today that we will reach the challenger without losing a md10 match"
+        },
+        {
+            id: '5',
+            guild: {
+                id: '1',
+                name: 'Legendary',
+                icon: null,
+                owner: true
+            },
+            category: '1',
+            date: '06/22 at 08:40PM',
+            description: "It's today that we will reach the challenger without losing a md10 match"
+        },
+        {
+            id: '6',
+            guild: {
+                id: '1',
+                name: 'Legendary',
+                icon: null,
+                owner: true
+            },
+            category: '1',
+            date: '06/22 at 08:40PM',
+            description: "It's today that we will reach the challenger without losing a md10 match"
+        },
+        {
+            id: '7',
+            guild: {
+                id: '1',
+                name: 'Legendary',
+                icon: null,
+                owner: true
+            },
+            category: '1',
+            date: '06/22 at 08:40PM',
+            description: "It's today that we will reach the challenger without losing a md10 match"
         }
     ]
 
@@ -71,16 +131,18 @@ export function Home() {
                         title="Scheduled matches"
                         subtitle="Total 6"
                     />
-                    <FlatList
-                        style={styles.matches}
-                        showsVerticalScrollIndicator={false}
-                        data={appointments}
-                        keyExtractor={item => item.id}
-                        renderItem={({ item }) => <Appointment data={item} onPress={handleAppointmentDetails}/>}
-                        ItemSeparatorComponent={() => <ListDivider />}
-                    />
+
                 </View>
             </View>
+            <FlatList
+                style={styles.matches}
+                showsVerticalScrollIndicator={false}
+                data={appointments}
+                keyExtractor={item => item.id}
+                renderItem={({ item }) => <Appointment data={item} onPress={handleAppointmentDetails} />}
+                contentContainerStyle={{paddingBottom: 69}}
+                ItemSeparatorComponent={() => <ListDivider />}
+            />
         </Background>
     )
 }
