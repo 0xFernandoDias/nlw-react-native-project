@@ -18,6 +18,8 @@ export const theme = {
     heading: '#DDE3F0',
     line: '#991F36',
     on: '#32BD50',
+
+    discord: '#7289da'
   },
 
   fonts: {
@@ -26,4 +28,4 @@ export const theme = {
     text400: 'Inter_400Regular',
     text500: 'Inter_500Medium',
   }
-};
+}
